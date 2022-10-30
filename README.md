@@ -3,7 +3,7 @@
 ---
 
 ## SECTION 1 : PROJECT TITLE
-## IRS-PM-2022-10-30-IS04PT-GRP-Movie Recommendation System
+## IRS-PM-2022-10-30-IS04FT-GRP-Movie Recommendation System
 
 <img src="img/index.png"
      style="float: left; margin-right: 0px;" />
