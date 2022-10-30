@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommended Movies </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/recommend1.css' %} "charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="title">
+        <i class="fa fa-film" style="font-size:26px"></i>&nbsp;
+        Movie Recommendation</div>
+    <div class="users">
+        <i class="fa fa-user-o" style="font-size:36px"></i>&nbsp;
+        <a href="{% url 'users:showmessage' %}">{{ user.username }}</a></div>
+
+</div>
+<div class="nav">
+ <div class="topnav">
+  <a href="{% url 'index' %}">Home</a>
+
+  </div>
+
+</div>
+<div class="content" style="margin-bottom:20px;">
+ <h1>Movies similar to your favorite movies：</h1>
+ {% for result in results %}
+    <li>
+        <p>{{ result.title }}</p>
+        <img src="{{ result.poster }}" alt="" class="pic1" style="margin-right:10px;">
+    </li>
+
+ {%  endfor %}
+
+</div>
+
+<div style="padding: 0.5%;display:block;width:100%;margin-bottom:0px;">
+    <hr style="color:black;"/>
+    <center>
+<i class="fa fa-film" style="font-size:26px"></i>&nbsp;@Movie Recommendation</center>
+</div>
+</body>
+</html>

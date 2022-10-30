@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommended Movies </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/recommend1.css' %} "charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+
+       # li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        #recommend2{
+                position:absolute;
+                left:700px;
+                background-color: #008CBA;
+                color: white;
+                padding: 5px 12px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="title">
+        <i class="fa fa-film" style="font-size:26px"></i>&nbsp;
+        Movie Recommendation</div>
+    <div class="users">
+        <i class="fa fa-user-o" style="font-size:36px"></i>&nbsp;
+        <a href="{% url 'users:showmessage' %}">{{ user.username }}</a></div>
+
+</div>
+<div class="nav">
+ <div class="topnav">
+  <a href="{% url 'index' %}">Home</a>
+
+
+  </div>
+
+</div>
+<div class="content">
+ <h1>Recommend Result:</h1>
+     <h3>People with similar interests to you also liked the following movies：</h3>
+ {% for result in results %}
+    <li style="margin-right:1.1%" >
+       <center><p>{{ result.title }}</p></center>
+        <img src="{{ result.poster }}" alt="" class="pic1">
+    </li>
+
+ {%  endfor %}
+
+        <form action="users/recommend1/recommend2/" method="get" style="border-width:5px;
+border-color:lightblue;">
+            {% csrf_token %}
+            <input type="hidden" name="userIddd" id = "userId3" ">
+            <input type="submit" name = "viewResult" class="btn"  id = "recommend1" value="View recommended movies">
+        </form>
+</div>
+<div style="padding: 0.5%;display:block;position:absolute;bottom: 0;width:100%;">
+    <hr style="color:black;"/>
+    <center>
+<i class="fa fa-film" style="font-size:26px"></i>&nbsp;@Movie Recommendation</center>
+</div>
+</body>
+</html>
