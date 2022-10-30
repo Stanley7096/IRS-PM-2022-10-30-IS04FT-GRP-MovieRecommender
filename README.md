@@ -5,22 +5,32 @@
 ## SECTION 1 : PROJECT TITLE
 ## IRS-PM-2022-10-30-IS04PT-GRP-Movie Recommendation System
 
-<img src="SystemCode/clips/static/hdb-bto.png"
+<img src="img/index.png"
      style="float: left; margin-right: 0px;" />
 
+<img src="img/home.png"
+     style="float: left; margin-right: 0px;" />
+
+<img src="img/user.png"
+     style="float: left; margin-right: 0px;" />
+
+<img src="img/item.png"
+     style="float: left; margin-right: 0px;" />
 ---
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
-Singapore ranks amongst countries with the highest population density in the world. In a bid to have firm control over long term urban planning, the Singapore government came up with the “Built to Order” (abbreviated BTO) initiative back in 2001. These are new Housing Development Board (HDB) flats tightly controlled by their eligibility and quantity released every year. In more recent years, the modern BTO scheme in Singapore requires a waiting period of 3-4 years, and is generally targeted at young Singaporean couples looking to purchase their first property and set up a family. Nationality and income ceilings are some of the broad filters that determine one’s eligibility for the highly sought after projects. 
+Nowadays movies have become one of the most popular and crucial entertainment mediums in people’s daily life. Also as a popular culture and art in contemporary society, the penetration, inclusiveness and coverage of movie and television art are unmatched by other arts. It affects social life by acting on people's thoughts and concepts. Movie and television appreciation can improve the aesthetic taste and artistic appreciation ability of people all around the world, and plays an important role in the quality education of people.
 
+With the rapid development of Internet and technology, more and more companies tend to build an online movie website by purchasing movies’ copyright and provide users with paid online viewing services like Netflix, Prime Video, HBO Max, Tencent Video, etc. And every platform has its own recommendation system, which is very significant:
 
-Our team, comprising of 6 young Singaporeans, all hope to be property owners one day. Many of our peers opt for BTO flats due to their affordability, existence of financial aid from the government, as well as their resale value. However, there often exists a knowledge gap for these young couples during the decision making process and they end up making potentially regretful decisions. We would like to bridge this knowledge gap, and have hence chosen to base our project on creating a recommender system for BTO flats, utilizing the data from recent launches in Tampines, Eunos, Sengkang and Punggol. 
+First, a fast recommendation system can increase user growth, increase user retention, activity, and length of stay on the web pages.
 
+Most video streaming platforms use the membership-based profit model, Therefore, it is very important to increase the conversion rate of VIP and VIP retention. An accurate recommendation system can increase the purchase rate of VIP and attract users to continue watching movies that match their preferences.
 
-Using the techniques imparted to us in lectures, our group first set out to build a sizeable knowledge base via conducting an interview and administering a survey. While building the system, we utilized tools such as Java to scrape real time data from HDB website and transform it into a database, CLIPS to synthesize the rule based reasoning process, and Python to integrate it into an easy to use UI for the everyday user. To add icing on the cake, we even hosted the system on a website so that the everyday user can access it through the click of a link.
+A complete recommendation system can help save labor costs for companies. We can imagine that, with the increase of business complexity, the cost of the algorithm is basically constant, while the editing cost increases linearly. Therefore, the recommendation algorithm is widely used in extremely complex products or video companies with multiple product matrices to maintain, which can greatly reduce the Labor costs.
 
+Using the techniques imparted to us in lectures, Our group use MySQL for building the whole database and deploy Django to build interfaces, and use python post method to resolve user preference data sent back by the frontend(Jquery+CSS3+HTML5). The collaborative filtering algorithm written by Python will give a feedback recommendation result back to the frontend.
 
-Our team had an amazing time working on this project, and hope to share our insights with everyone. Despite a focus on BTO flats, we would recommend it for everybody interested in understanding property market trends for residence or investment purposes. There truly are a wide array of factors behind the decision to invest in a property, and we only wish there was more time to work on the scope and scale of the project. 
 
 ---
 
@@ -28,7 +38,7 @@ Our team had an amazing time working on this project, and hope to share our insi
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Li Yuheng | A0261798L | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| e0983192@nus.edu.sg |
+| Li Yuheng | A0261798L | 1. System architecture design 2. Data Acquisition 3. Data Processing 4. Django & Database development 5. User Interface development 6. Project report writing| e0983192@nus.edu.sg |
 | Huang Chenxi | A0261955W | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567B@gmail.com |
 | Guo Hongxi | A0261887M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567C@outlook.com |
 | Paulson Premsingh Samson Dhansingh | A0261986M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567D@yahoo.com |
@@ -39,8 +49,6 @@ Our team had an amazing time working on this project, and hope to share our insi
 
 [![Sudoku AI Solver](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Sudoku AI Solver")
 
-Note: It is not mandatory for every project member to appear in video presentation; Presentation by one project member is acceptable. 
-More reference video presentations [here](https://telescopeuser.wordpress.com/2018/03/31/master-of-technology-solution-know-how-video-index-2/ "video presentations")
 
 ---
 
@@ -104,7 +112,9 @@ More reference video presentations [here](https://telescopeuser.wordpress.com/20
 
 `Refer to Github Folder: Miscellaneous`
 
-### HDB_BTO_SURVEY.xlsx
+### MovieGenre3.csv
+
+### users_resulttable.csv
 * Results of survey
 * Insights derived, which were subsequently used in our system
 
