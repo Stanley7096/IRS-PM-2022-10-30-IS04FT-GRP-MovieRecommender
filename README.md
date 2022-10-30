@@ -37,16 +37,16 @@ Using the techniques imparted to us in lectures, Our group use MySQL for buildin
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Li Yuheng | A0261798L | 1. System architecture design 2. Data Acquisition 3. Data Processing 4. Django & Database development 5. User Interface development 6. Project report writing| e0983192@nus.edu.sg |
-| Huang Chenxi | A0261955W | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567B@gmail.com |
-| Guo Hongxi | A0261887M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567C@outlook.com |
-| Paulson Premsingh Samson Dhansingh | A0261986M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567D@yahoo.com |
+| Li Yuheng | A0261798L | 1. System architecture design 2. Data Acquisition 3. Data Processing 4. Django & Database development 5. User Interface development 6. Project report writing| e0983192@u.nus.edu |
+| Huang Chenxi | A0261955W | 1. IMDB movies and users ratings datasets creating 2. Measuring cosine similarity 3. Reasoning by user-based and item-based collaborative filtering 4. Coding in Python for back-end recommendation  5. Joint debugging with Django front-end part 6. Deploying the web application 7. Elaborating group project report sections 3.1, 3.2, 3.3, 7| chenxihuang@u.nus.edu |
+| Guo Hongxi | A0261887M | 1.Front-end design and implementation 2.Implementation of front end and back end interaction 3.Structure of database 4.Project reporting writing 5.Video making| E0983281@u.nus.edu |
+| Paulson Premsingh Samson Dhansingh | A0261986M | 1. Algorithm development 2. Development of Django based web application  3. Making and editing of videos 4. Report Writing| e0983380@u.nus.edu |
 
 ---
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-[![Sudoku AI Solver](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Sudoku AI Solver")
+[![Movie Recommendation System User Guide](https://res.cloudinary.com/marcomontalbano/image/upload/v1667141366/video_to_markdown/images/youtube--5vjL2sCKbPY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=5vjL2sCKbPY "Movie Recommendation System User Guide")
 
 
 ---
@@ -171,10 +171,11 @@ Download the ZIP file and unzip it locally
 
 ### MovieGenre3.csv
 
+* The basic information list like names and types of movies
+  
 ### users_resulttable.csv
-* Results of survey
-* Insights derived, which were subsequently used in our system
 
+* Users' preferences and ratings for system to deploy the algorithms
 ---
 
 ### <<<<<<<<<<<<<<<<<<<< End of Project >>>>>>>>>>>>>>>>>>>>
