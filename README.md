@@ -1,4 +1,4 @@
-### <<<<<<<<<<<<<<<<<<<< Start of Template >>>>>>>>>>>>>>>>>>>>
+### <<<<<<<<<<<<<<<<<<<< Start of Project >>>>>>>>>>>>>>>>>>>>
 
 ---
 
@@ -15,8 +15,7 @@
      style="float: left; margin-right: 0px;" />
 
 <img src="img/item.png"
-     style="float: left; margin-right: 0px;" />
----
+	style="float: left; margin-right: 0px;" />
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 Nowadays movies have become one of the most popular and crucial entertainment mediums in people’s daily life. Also as a popular culture and art in contemporary society, the penetration, inclusiveness and coverage of movie and television art are unmatched by other arts. It affects social life by acting on people's thoughts and concepts. Movie and television appreciation can improve the aesthetic taste and artistic appreciation ability of people all around the world, and plays an important role in the quality education of people.
@@ -56,30 +55,88 @@ Using the techniques imparted to us in lectures, Our group use MySQL for buildin
 
 `Refer to appendix <Installation & User Guide> in project report at Github Folder: ProjectReport`
 
-### [ 1 ] To run the system using iss-vm
+There are two ways to use this project.
 
-> download pre-built virtual machine from http://bit.ly/iss-vm
+- **Easy usage** 
+- **Custom usage** - Convenient for custom development. You need to follow the packaging instruction to package manually. Unless you are familiar with Python and Django, this approach is not recommended.
 
-> start iss-vm
+### 5.1 Easy usage
 
-> open terminal in iss-vm
+#### 5.1.1 Download
 
-> $ git clone https://github.com/telescopeuser/Workshop-Project-Submission-Template.git
+Download the ZIP file and unzip it locally
 
-> $ source activate iss-env-py2
+#### 5.1.2 Create Database
 
-> (iss-env-py2) $ cd Workshop-Project-Submission-Template/SystemCode/clips
+1. Configure [MySQL](https://www.mysql.com/) connection:
 
-> (iss-env-py2) $ python app.py
+   ```
+   host='127.0.0.1', port=3306, user='root', password='root'
+   ```
 
-> **Go to URL using web browser** http://0.0.0.0:5000 or http://127.0.0.1:5000
+2. Import data: execute `moviedata.sql` in MySQL
 
-### [ 2 ] To run the system in other/local machine:
-### Install additional necessary libraries. This application works in python 2 only.
+#### 5.1.3 Run
 
-> $ sudo apt-get install python-clips clips build-essential libssl-dev libffi-dev python-dev python-pip
+1. Double click `\movieRMD\movieRMD.exe`
+2. Browser access http://127.0.0.1:8000/
 
-> $ pip install pyclips flask flask-socketio eventlet simplejson pandas
+### 5.2 Custom usage
+
+1. Perform **5.1.1 Download** & **5.1.2 Create Database**. Make `\source-code\movierecommend` a project file
+
+   **NOTE: Make sure the project directory includes the static folder. If not, be sure to create a new static folder, and then create a new static_root folder under the static folder!*
+
+2. *Optional check 1:*
+
+   ​	\django_auth_example\urls.py includes codes:
+
+   ```python
+   from django.conf.urls import static
+   from . import settings
+   
+   // The following code must be on a new line
+   urlpatterns += static.static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+   ```
+
+   ​	\django_auth_example\setting.py includes codes:
+
+   ```python
+   STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_root')
+   ```
+
+3. Execute the `python manage.py collectstatic` command to collect static files into static_root
+
+4. Execute the `pyinstaller manage.spec` command to package
+
+5. Copy the `/static` and `/template` folders to the `/dist/manage` directory
+
+6. Copy the `/users/static` folder to `/dist/manage/users`
+
+7. *Optional check 2:*
+
+   ​	Go back to the project directory. movieRMD.py should include codes:
+
+   ```python
+   import os
+   os.system('manage.exe runserver 8000 --noreload')
+   input()
+   ```
+
+8. Choose any of the following ways to execute
+
+   ```shell
+   // Execute with custom icon
+   pyinstaller -F --icon=jieni.ico movieRMD.py
+   // Execute without custom icon
+   pyinstaller -F movieRMD.py
+   ```
+
+9. A movieRMD.exe will be generated in the dist folder and copy it to `dist/manage/`
+
+10. Zip the dist folder, rename and replace the existing movieRMD folder
+
+11. Perform **5.1.3 Run**
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
@@ -120,7 +177,7 @@ Using the techniques imparted to us in lectures, Our group use MySQL for buildin
 
 ---
 
-### <<<<<<<<<<<<<<<<<<<< End of Template >>>>>>>>>>>>>>>>>>>>
+### <<<<<<<<<<<<<<<<<<<< End of Project >>>>>>>>>>>>>>>>>>>>
 
 ---
 
