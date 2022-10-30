@@ -37,8 +37,8 @@ Using the techniques imparted to us in lectures, Our group use MySQL for buildin
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Li Yuheng | A0261798L | 1. System architecture design 2. Data Acquisition 3. Data Processing 4. Django & Database development 5. User Interface development 6. Project report writing| e0983192@nus.edu.sg |
-| Huang Chenxi | A0261955W | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567B@gmail.com |
+| Li Yuheng | A0261798L | 1. System architecture design<br/> 2. Data Acquisition<br/> 3. Data Processing<br/> 4. Django & Database development<br/> 5. User Interface development<br/> 6. Project report writing | e0983192@nus.edu.sg |
+| Huang Chenxi | A0261955W | 1. IMDB movies and users ratings datasets creating<br/>2. Measuring cosine similarity between users ignoring pairwise complete<br/>3. Reasoning by user-based collaborative filtering and item-based collaborative filtering<br/>4. Coding in Python for back-end recommendation <br/>5. Joint debugging with Django front-end part<br/>6. Deploying the web application<br/>7. Elaborating group project report sections 3.1, 3.2, 3.3, 7.2, 7.3, 7.6 | chenxihuang@u.nus.edu |
 | Guo Hongxi | A0261887M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567C@outlook.com |
 | Paulson Premsingh Samson Dhansingh | A0261986M | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567D@yahoo.com |
 
